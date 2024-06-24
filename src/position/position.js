@@ -271,7 +271,8 @@ angular.module('ui.bootstrap.position', [])
           width: Math.round(angular.isNumber(elemBCR.width) ? elemBCR.width : elem.offsetWidth),
           height: Math.round(angular.isNumber(elemBCR.height) ? elemBCR.height : elem.offsetHeight),
           top: Math.round(elemBCR.top + ($window.pageYOffset || $document[0].documentElement.scrollTop)),
-          left: Math.round(elemBCR.left + ($window.pageXOffset || $document[0].documentElement.scrollLeft))
+          left: Math.round(elemBCR.left + ($window.pageXOffset || $document[0].documentElement.scrollLeft)),
+		  innerWidth : $window.innerWidth
         };
       },
 
